@@ -1,0 +1,385 @@
+/* Estilo Geral */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+/* Centralizando o conteúdo principal */
+.container {
+    width: 100%;
+    max-width: 1200px; /* Limitar o tamanho máximo do conteúdo */
+    margin: 0 auto; /* Centraliza a .container */
+    padding: 20px;
+}
+
+/* Cabeçalho */
+header {
+    background: #003366;
+    color: white;
+    width: 100%;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+header .menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+header .menu li {
+    display: inline;
+}
+
+header .menu a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    transition: background 0.3s ease;
+}
+
+header .menu a:hover {
+    background: #00509e;
+    border-radius: 5px;
+}
+
+
+/* Apresentação */
+#apresentacao {
+    
+    color: rgb(255, 255, 255);
+    outline-color: blue;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+#apresentacao h1 {
+    -webkit-text-stroke: 1.5px rgb(9, 255, 0); /* Contorno */
+    text-shadow: 2px 2px 5px rgba(1, 252, 76, 0.7); /* Sombra */
+    color: rgb(38, 0, 253); /* Cor do texto */
+}
+
+#apresentacao h1 {
+    font-size: 3.5em;
+}
+
+#apresentacao p {
+    font-size: 2.2em;
+    margin-top: 20px;
+    -webkit-text-stroke: 1.5px rgb(9, 255, 0); /* Contorno */
+    text-shadow: 2px 2px 5px rgba(1, 252, 76, 0.7); /* Sombra */
+    color: rgb(38, 0, 253); /* Cor do texto */
+}
+
+/* Divisões e Serviços */
+#divisoes, #divisoes1 {
+    background: #f4f4f4;
+    padding: 50px 20px;
+    font-size: 2.2em;
+    margin-top: 20px;
+    -webkit-text-stroke: 1.5px rgb(9, 255, 0); /* Contorno */
+    text-shadow: 2px 2px 5px rgba(1, 252, 76, 0.7); /* Sombra */
+    color: rgb(38, 0, 253); /* Cor do texto */
+}
+
+#divisoes h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.divisao {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+/* Investidores */
+#investidores {
+    background: #e0f7fa;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#investidores table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+#investidores th, #investidores td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+#investidores th {
+    background: #006064;
+    color: white;
+}
+
+/* Produtos e Planos */
+#produtos-planos {
+    padding: 50px 20px;
+}
+
+.produto {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px 0;
+}
+
+/* Vagas e Cursos */
+#vagas-cursos {
+    background: #f9f9f9;
+    padding: 50px 20px;
+}
+
+.vagas, .cursos {
+    margin-bottom: 30px;
+}
+
+/* Rodapé */
+footer {
+    background: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+}
+
+footer .social {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+footer .social li {
+    display: inline;
+}
+
+footer .social a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+footer .social a:hover {
+    color: #00bcd4;
+}
+
+/* Estilos de Navegação */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Outras melhorias de layout */
+section {
+    margin-bottom: 40px;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilo para o botão de música fixo */
+.music-button {
+    position: fixed;
+    bottom: 20px; /* Distância do fundo da tela */
+    right: 20px;  /* Distância da borda direita da tela */
+    z-index: 1000; /* Para garantir que fique por cima de outros elementos */
+}
+
+.music-button button {
+    width: 50px; /* Largura do botão */
+    height: 50px; /* Altura do botão */
+    background-color: #366492; /* Cor de fundo */
+    color: white; /* Cor do ícone */
+    border: none; /* Sem borda */
+    border-radius: 5px; /* Arredondar os cantos */
+    font-size: 25px; /* Tamanho do ícone */
+    cursor: pointer; /* Cursor de mão ao passar sobre o botão */
+    box-shadow: 0px 4px 8px rgba(245, 244, 244, 0.3); /* Sombra do botão */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Efeitos de transição */
+}
+
+.music-button button:hover {
+    background-color: #00509e; /* Cor de fundo quando o botão é hover */
+    transform: scale(1.1); /* Aumentar um pouco o tamanho quando hover */
+}
+
+.music-button button:focus {
+    outline: none; /* Remover o contorno ao clicar */
+}
+
+/* Estilo do Menu */
+nav ul.menu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+
+nav ul.menu li {
+    display: inline-block;
+    margin: 10px;
+}
+
+nav ul.menu li a {
+    font-size: 1.8em;
+    color: rgb(38, 0, 253); /* Cor do texto */
+    text-decoration: none;
+    position: relative;
+    -webkit-text-stroke: 1.5px rgb(9, 255, 0); /* Contorno */
+    text-shadow: 2px 2px 5px rgba(1, 252, 76, 0.7); /* Sombra */
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+}
+
+/* Efeito ao passar o mouse (hover) */
+nav ul.menu li a:hover {
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.7); /* Sombra mais clara no hover */
+}
+
+
+/* Estilo do Cabeçalho */
+header {
+    background-color: #003366; /* Cor de fundo do cabeçalho */
+    padding: 20px 0; /* Diminui o padding do topo e do fundo */
+    text-align: center; /* Centraliza o conteúdo */
+    position: relative; /* Remove a fixação */
+}
+
+header h1 {
+    font-size: 2em; /* Reduz o tamanho da fonte do cabeçalho */
+    color: rgb(38, 0, 253); /* Cor do título */
+    -webkit-text-stroke: 1.5px rgb(9, 255, 0); /* Contorno */
+    text-shadow: 2px 2px 5px rgba(1, 252, 76, 0.7); /* Sombra */
+}
+
+header nav {
+    margin-top: 10px; /* Espaçamento entre o título e o menu */
+}
+
+nav ul.menu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+
+nav ul.menu li {
+    display: inline-block;
+    margin: 10px;
+}
+
+nav ul.menu li a {
+    font-size: 1.8em; /* Diminui o tamanho da fonte dos itens do menu */
+    color: rgb(38, 0, 253); /* Cor do texto */
+    text-decoration: none;
+    -webkit-text-stroke: 1.5px rgb(9, 255, 0); /* Contorno */
+    text-shadow: 2px 2px 5px rgba(1, 252, 76, 0.7); /* Sombra */
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+}
+
+/* Efeito ao passar o mouse (hover) */
+nav ul.menu li a:hover {
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.7); /* Sombra mais clara no hover */
+}
+
+
+/* Botão de voltar ao topo */
+#botao-voltar-topo {
+    position: fixed;
+    bottom: 20px; /* Distância da borda inferior */
+    left: 20px; /* Distância da borda esquerda */
+    background-color: rgb(38, 0, 253); /* Cor de fundo */
+    color: white; /* Cor do ícone/texto */
+    border: 2px solid rgb(9, 255, 0); /* Borda */
+    border-radius: 50%; /* Botão redondo */
+    width: 50px; /* Largura do botão */
+    height: 50px; /* Altura do botão */
+    text-align: center; /* Centraliza o conteúdo */
+    font-size: 1.5em; /* Tamanho do ícone */
+    line-height: 45px; /* Centraliza verticalmente o ícone */
+    text-decoration: none; /* Remove sublinhado do link */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra */
+    transition: all 0.3s ease;
+}
+
+/* Efeito ao passar o mouse */
+#botao-voltar-topo:hover {
+    background-color: rgb(255, 255, 255); /* Fundo branco */
+    color: rgb(38, 0, 253); /* Cor do texto no hover */
+    border-color: rgb(255, 0, 0); /* Cor da borda no hover */
+    box-shadow: 2px 2px 10px rgba(255, 0, 0, 0.7); /* Sombra no hover */
+}
+
+/* Estilo para o contêiner geral */
+.container {
+    width: 90%; /* Largura proporcional */
+    max-width: 1200px; /* Limita a largura máxima */
+    margin: 0 auto; /* Centraliza na página */
+    padding: 20px; /* Espaçamento interno */
+}
+
+/* Estilo para as imagens no contêiner */
+.container img {
+    width: 100%; /* Ocupa toda a largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 8px; /* Opcional: bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Opcional: sombra suave */
+}
+
+.logo {
+    width: auto; /* Mantém a largura proporcional */
+    height: auto; /* Mantém a altura proporcional */
+    max-width: 450px; /* Limita a largura máxima */
+    max-height: 450px; /* Limita a altura máxima */
+    display: block; /* Garante que a imagem se comporte como um bloco */
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+}
+
+
